@@ -8,23 +8,48 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <article>
+    <h1>Conversão de Temperatura</h1>
+    <main>
+        <section class="container-card">
+            <h2>celsius para fahrenheit</h2>
+    
+            <div class="card">
+                <div class="container-result">
+                    <h3 data-js="resultCelsius"></h3>
+                </div>
+        
+                <form>
+                    <label>Informe a temperatura em Celsius:</label><br />
+                    <input type="number" data-js="celsius" />
+                </form>
+        
+                <div class="container-buttons">
+                    <button type="button" id="button-convert" onclick="readDataCelsius()">Converter</button>
+                    <button type="button" id="button-clear" onclick="clearFieldsCelsius()">Limpar</button>
+                </div>
+            </div>
+        </section>
 
-        <div class="container-result">
-            <h3 data-js="result"></h3>
-        </div>
-
-        <form>
-            <label>Informe a temperatura em Celsius:</label><br />
-            <input type="number" data-js="celsius" />
-        </form>
-
-        <div class="container-buttons">
-            <button type="button" id="button-convert" onclick="readData()">Converter</button>
-            <button type="button" id="button-clear" onclick="clearFields()">Limpar</button>
-        </div>
-
-    </article>
+        <section class="container-card">
+            <h2>fahrenheit para celsius</h2>
+    
+            <div class="card">
+                <div class="container-result">
+                    <h3 data-js="resultFahrenheit"></h3>
+                </div>
+        
+                <form>
+                    <label>Informe a temperatura em Fahrenheit:</label><br />
+                    <input type="number" data-js="fahrenheit" />
+                </form>
+        
+                <div class="container-buttons">
+                    <button type="button" id="button-convert" onclick="readDataFahrenheit()">Converter</button>
+                    <button type="button" id="button-clear" onclick="clearFieldsFahrenheit()">Limpar</button>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="js/script.js"></script>
 </body>

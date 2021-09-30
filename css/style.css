@@ -6,15 +6,48 @@
 
 body{
     background-color: #151515;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
-article{
-    outline: 4px solid #464646;
+h1 {
+    text-align: center;
+    margin: 15px;
+    color: #fafafa;
+    font-size: 3.2em;
+}
+
+main{
+    background-color: #151515;
+    
+    height: 80vh;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-card{
+    display: flex;
+    flex-direction: column;
+
+    height: 530px;
+    max-width: 100%;
+
+    margin: 30px;
+}
+
+.container-card h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2.3em;
+    color: #fafafa;
+    
+    margin: 10px;
+}
+
+.card{
+    border: 4px solid #0d0d0d;
     border-radius: 25px;
 
     margin: auto;
@@ -41,7 +74,6 @@ article{
 .container-result h3{
     font-size: 2.40em;
     color: #fafafa;
-    text-decoration: underline;
 }
 
 label{
@@ -54,14 +86,19 @@ label{
 input{
     margin: 12px 0;
     padding: 16px;
-    width: 300px;
+    width: 340px;
     height: 40px;
     font-size: 1.03em;
 
     border-radius: 12px;
-    border: .1em solid #fff;
+    border: .1em solid #fafafa;
     background-color: #0d0d0d;
     color: #fafafa;
+}
+
+input:focus{
+    outline: none;
+    border: .13em solid #fafafa;
 }
 
 .container-buttons{
@@ -86,26 +123,25 @@ button{
 
     cursor: pointer;
 }
+
 button:hover{box-shadow: none;}
 
 #button-convert{
-    background-color: green;
+    background-color: #1e80f0;
     color: #000;
 }
-
 #button-convert:hover{
     background-color: transparent;
-    color: green;
-    border-color: green;
+    color: #1e80f0;
+    border-color: #1e80f0;
 }
 
 #button-clear{
-    background-color: red;
-    color: #000;
-}
-
-#button-clear:hover{
     background-color: transparent;
     color: red;
     border-color: red;
+}
+#button-clear:hover{
+    background-color: red;
+    color: #000;
 }
