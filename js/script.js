@@ -19,7 +19,7 @@ function clearFieldsCelsius(){
 function readDataFahrenheit() {
     var fahrenheit = document.querySelector('[data-js="fahrenheit"]').value;
     var celsius = (fahrenheit - 32) * (5 / 9);
-    var showResultInFahrenheit = `Resultado: ${celsius.toFixed(0)}ºF`;
+    var showResultInFahrenheit = `Resultado: ${celsius.toFixed(0)}ºC`;
 
     document
         .querySelector('[data-js="resultFahrenheit"]').innerHTML = showResultInFahrenheit;
